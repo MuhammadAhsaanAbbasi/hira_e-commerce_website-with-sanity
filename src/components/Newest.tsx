@@ -1,5 +1,4 @@
-import { simplifiedProduct } from "@/app/interface";
-import { client } from "@/app/lib/sanity";
+import { client } from "@/lib/sanity";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";

@@ -1,10 +1,9 @@
-import ImageGallery from '@/app/components/ImageGallery';
-import {fullProduct } from '@/app/interface';
-import { client } from '@/app/lib/sanity';
+// import ImageGallery from '@/components/ImageGallery';
+import { client } from '@/lib/sanity';
 import React from 'react'
 
 async function getProduct(slug: string) {
-  const query = `*[_type == "product" && slug.current == ${slug}][0]{
+  const query = `*[_type == "product" && slug.current == "${slug}"]{
   _id,
     "imageUrl": image[0].asset->url,
     price,
@@ -22,11 +21,11 @@ const ProductPage = async ({ params }: { params: { slug: string } }) => {
   console.log(data)
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-screen-xl px-4 md:px-8">
+      {/* <div className="mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid gap-8 md:grid-cols-2">
           <ImageGallery image={data.imageUrl} />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

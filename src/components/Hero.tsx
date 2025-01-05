@@ -1,4 +1,4 @@
-import { client, urlFor } from "@/app/lib/sanity";
+import { client, urlFor } from "@/lib/sanity";
 import { url } from "inspector";
 import Image from "next/image";
 import Link from "next/link";

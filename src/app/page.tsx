@@ -1,5 +1,5 @@
-import Hero from "@/app/components/Hero";
-import Newest from "@/app/components/Newest";
+import Hero from "@/components/Hero";
+import Newest from "@/components/Newest";
 import React from "react";
 
 const Home = () => {
